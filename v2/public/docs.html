@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		<title>Miniblink</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" media="all" type="text/css" href="css/app.css" />
+		<script src="js/app.js" type="text/javascript" charset="utf-8" data-turbolinks-track="true"></script>
+		<meta name="description" content="Miniblink是一款全球最小的基于chromium 的浏览器控件, 绘制windows桌面应用，仅需通过HTML即可轻松实现，开发效率高，维护更简单。" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+
+	<body class="is-responsive">
+
+		<div class="footer-push">
+			<nav class="top-bar" aria-label="Primary">
+				<div class="wrapper no-pad">
+
+					<ul class="navigation">
+
+						<li>
+							<a class="" href="/packages">首页</a>
+						</li>
+						<li>
+							<a class="" href="/themes">优质案例</a>
+						</li>
+						<li>
+							<a class="" href="/src/docs">入门文档</a>
+						</li>
+						<li>
+							<a href="#">免费下载</a>
+						</li>
+						<li>
+							<a href="#">企业定制</a>
+						</li>
+						<li>
+							<a href="https://discuss.atom.io">GITHUB</a>
+						</li>
+					</ul>
+
+					<div class="top-bar-right">
+						<a href="/login?last_url=%2F">
+							<span class="octicon octicon-log-in"></span> English
+						</a>
+					</div>
+				</div>
+			</nav>
+
+			<div class="container" style="margin-top: 25px;">
+				<div class="row">
+					<div class="col-md-3">
+						<div id="sidebar">
+							<ul>
+								<li>
+									<h2>介绍</h2>
+									<p>Miniblink是一款全球最小的基于chromium 的浏览器控件, 绘制windows桌面应用，仅需通过HTML即可轻松实现，开发效率高，维护更简单。</p>
+								</li>
+								<li>
+									<h2>入门基础 </h2>
+									<ul>
+										<li>
+											<a href="#">认识miniblink</a>
+										</li>
+										<li>
+											<a href="#">快速接入</a>
+										</li>
+										<li>
+											<a href="#">绑定事件与回调事件</a>
+										</li>
+										<li>
+											<a href="#">下载SDK</a>
+										</li>
+										<li>
+											<a href="#">错误排查</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h2>社区版 </h2>
+									<ul>
+										<li>
+											<a href="#">API列表</a>
+										</li>
+										<li>
+											<a href="#">HOOK网络/截包</a>
+										</li>
+										<li>
+											<a href="#">NodeJS嵌入</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h2>企业版</h2>
+									<ul>
+										<li>
+											<a href="#">API列表</a>
+										</li>
+										<li>
+											<a href="#">MP4媒体播放嵌入</a>
+										</li>
+										<li>
+											<a href="#">多线程提高性能</a>
+										</li>
+										<li>
+											<a href="#">打印功能</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- end #sidebar -->
+					</div>
+					<div class="col-md-9">
+						<div id="content">
+							<div id="content-bgtop">
+								<div id="content-bgbtm">
+									<div class="post">
+										<h2 class="title"><a href="#">前言</a></h2>
+										<div class="entry">
+											<p>miniblink使用了wke的接口。wke的相关介绍可以google一下。 总的来说，miniblink的接口是纯C导出，只要使用wke.h即可加载。无需.lib。
+
+											</p>
+										</div>
+									</div>
+
+									<div class="post">
+										<h2 class="title"><a href="#">API</a></h2>
+										<div class="entry">
+											<p>unsigned int wkeVersion();</p>
+											<p>获取目前api版本号<br>参数：无</p>
+										</div>
+									</div>
+									<div class="post">
+										<h2 class="title"><a href="#">CreateFileSystem</a></h2>
+										<div class="entry">
+											<p>CreateFileSystem用于创建新的文件系统。</p>
+											<h4 class="sub-title">调试</h4>
+											<p>前往【API Explorer】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。</p>
+											<h4 class="sub-title">调试</h4>
+											<div class="param">
+												<table class="table">
+													<caption></caption>
+													<colgroup>
+														<col style="width:19.23076923076923%">
+														<col style="width:11.538461538461538%">
+														<col style="width:11.538461538461538%">
+														<col style="width:19.23076923076923%">
+														<col style="width:38.46153846153846%">
+													</colgroup>
+													<thead class="thead">
+														<tr>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-1">名称</th>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-2">类型</th>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-3">是否必选</th>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-4">示例值</th>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-5">描述</th>
+														</tr>
+													</thead>
+													<tbody class="tbody">
+														<tr>
+															<td class="colsep-1 rowsep-1"><span class="keyword parmname">Action</span></td>
+															<td class="colsep-1 rowsep-1">String</td>
+															<td class="colsep-1 rowsep-1">是</td>
+															<td class="colsep-1 rowsep-1" id="param-example-Action">CreateFileSystem</td>
+															<td class="colsep-1 rowsep-1" id="param-description-Action">
+																<p class="p">操作接口名，系统规定参数，取值：CreateFileSystem </p>
+															</td>
+														</tr>
+														<tr>
+															<td class="colsep-1 rowsep-1"><span class="keyword parmname">ProtocolType</span></td>
+															<td class="colsep-1 rowsep-1">String</td>
+															<td class="colsep-1 rowsep-1">是</td>
+															<td class="colsep-1 rowsep-1" id="param-example-ProtocolType">NFS</td>
+															<td class="colsep-1 rowsep-1" id="param-description-ProtocolType">
+																<p class="p">使用的协议类型，目前包含 NFS和SMB </p>
+															</td>
+														</tr>
+														<tr>
+															<td class="colsep-1 rowsep-1"><span class="keyword parmname">StorageType</span></td>
+															<td class="colsep-1 rowsep-1">String</td>
+															<td class="colsep-1 rowsep-1">是</td>
+															<td class="colsep-1 rowsep-1" id="param-example-StorageType">Performance</td>
+															<td class="colsep-1 rowsep-1" id="param-description-StorageType">
+																<p class="p">文件系统类别，目前包含 Performance（性能型）和 Capacity（容量型） </p>
+															</td>
+														</tr>
+														<tr>
+															<td class="colsep-1 rowsep-1"><span class="keyword parmname">Description</span></td>
+															<td class="colsep-1 rowsep-1">String</td>
+															<td class="colsep-1 rowsep-1">否</td>
+															<td class="colsep-1 rowsep-1" id="param-example-Description">balabala</td>
+															<td class="colsep-1 rowsep-1" id="param-description-Description">
+																<p class="p">文件系统描述（不可用空格符） </p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											
+											<h4 class="sub-title">返回值</h4>
+											<div class="param">
+												<table class="table">
+													<caption></caption>
+													<colgroup>
+														<col style="width:19.23076923076923%">
+														<col style="width:11.538461538461538%">
+														<col style="width:11.538461538461538%">
+														<col style="width:19.23076923076923%">
+														<col style="width:38.46153846153846%">
+													</colgroup>
+													<thead class="thead">
+														<tr>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-1">名称</th>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-2">类型</th>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-4">示例值</th>
+															<th class="colsep-1 rowsep-1" id="doc-api-1038219-parameters-entry-5">描述</th>
+														</tr>
+													</thead>
+													<tbody class="tbody">
+														<tr>
+															<td class="colsep-1 rowsep-1"><span class="keyword parmname">FileSystemId</span></td>
+															<td class="colsep-1 rowsep-1">String</td>
+															<td class="colsep-1 rowsep-1" id="param-example-Action">CreateFileSystem</td>
+															<td class="colsep-1 rowsep-1" id="param-description-Action">
+																<p class="p">操作接口名，系统规定参数，取值：CreateFileSystem </p>
+															</td>
+														</tr>
+														<tr>
+															<td class="colsep-1 rowsep-1"><span class="keyword parmname">RequestId</span></td>
+															<td class="colsep-1 rowsep-1">String</td>
+															<td class="colsep-1 rowsep-1" id="param-example-ProtocolType">NFS</td>
+															<td class="colsep-1 rowsep-1" id="param-description-ProtocolType">
+																<p class="p">使用的协议类型，目前包含 NFS和SMB </p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											
+										</div>
+									</div>
+									<div class="post">
+										<h2 class="title"><a href="#">开发包SDK下载</a></h2>
+										<div class="entry">
+											<h4 class="sub-title">下载demo</h4>
+											<p>开发包由网友提供，仅供参考，如有问题请反馈到github。 </p>
+											<div class="markdown">
+												<table class="table">
+													<thead>
+														<tr>
+															<th style="text-align:left;">Demo版本</th>
+															<th style="text-align:left;">运行环境</th>
+															<th style="text-align:left;">下载链接</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td style="text-align:left;">.NET版</td>
+															<td style="text-align:left;">VC12.0及以上+.NET4.5及以上</td>
+															<td style="text-align:left;">
+																<a href="javascript:void(0)" target="_blank" rel="noopener">点击下载</a>
+															</td>
+														</tr>
+														<tr>
+															<td style="text-align:left;">C++版</td>
+															<td style="text-align:left;">VC14.0及以上+VS15.0及以上</td>
+															<td style="text-align:left;">
+																<a href="javascript:void(0)" target="_blank" rel="noopener">点击下载</a>
+															</td>
+														</tr>
+														<tr>
+															<td style="text-align:left;">.delphi版</td>
+															<td style="text-align:left;">delphi7以上</td>
+															<td style="text-align:left;">
+																<a href="javascript:void(0)" target="_blank" rel="noopener">点击下载</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end #content -->
+					</div>
+				</div>
+
+			</div>
+
+	</body>
+
+</html>
