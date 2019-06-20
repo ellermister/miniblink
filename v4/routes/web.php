@@ -16,4 +16,17 @@ Route::get('/', function () {
 });
 Route::namespace('Publics')->group(function () {
 	Route::get('/start', 'DocsController@start');
+	Route::get('/start.html', 'DocsController@start');
+});
+
+Route::namespace('Admin')->group(function () {
+    Route::get('/admin/index', 'ManageController@index');
+    Route::get('/admin/category', 'DocsController@categoryList');
+    Route::get('/admin/category/editor/{id}', 'DocsController@categoryEditor');
+    Route::post('/admin/category/editor/{id}', 'DocsController@categoryUpdate');
+
+
+    Route::get('/admin/docs', 'DocsController@docList');
+    Route::get('/admin/docs/editor/{id}', 'DocsController@docEditor');
+    Route::post('/admin/docs/editor/{id}', 'DocsController@docUpdate');
 });

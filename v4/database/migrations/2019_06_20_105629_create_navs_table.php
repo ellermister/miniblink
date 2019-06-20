@@ -18,7 +18,8 @@ class CreateNavsTable extends Migration
             $table->string('name')->comment('分类菜单英文名')->default('')->unique();;
             $table->string('desc')->comment('分类菜单解释名,中文名')->default('');
             $table->string('pid')->comment('父级ID')->default(0);
-            $table->timestamps();
+            $table->unsignedInteger('created_at')->default(0);
+            $table->unsignedInteger('updated_at')->default(0);
         });
     }
 
